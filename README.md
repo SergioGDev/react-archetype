@@ -1,28 +1,25 @@
-# React + TypeScript + Vite
+# React Archetype
+Welcome to the React Project Archetype! This repository serves as a foundation and template for kickstarting robust and modern React projects. Whether you're a seasoned developer looking for a consistent starting point or a newcomer eager to learn and build with React, this archetype provides a well-structured and opinionated setup to accelerate your development process.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## About This Archetype
+The React Project Archetype is designed to encapsulate best practices, proven patterns, and a sensible project structure to empower developers to create maintainable and scalable React applications. It integrates a carefully curated selection of tools, libraries, and configurations that foster efficiency, code quality, and collaboration. By utilizing this archetype, you can jumpstart your React projects with confidence, knowing that you're following industry standards and benefiting from battle-tested setups.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+## Getting Started
+To get started, use this repository as a template (Use this template -> Create a new repository). Once you have your local repository, install the dependencies and start the project:
+```
+npm install
+npm run dev
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
-# react-archetype
+# Arquetipo de un proyecto en React
+¡Bienvenido al Arquetipo de Proyecto React! Este repositorio sirve como base y plantilla para comenzar proyectos React sólidos y modernos. Ya seas un desarrollador experimentado en busca de un punto de partida consistente o un principiante ansioso por aprender y construir con React, este arquetipo proporciona una estructura bien definida y una configuración con opinión para acelerar tu proceso de desarrollo.
+
+## Acerca de Este Arquetipo
+El Arquetipo de Proyecto React está diseñado para encapsular las mejores prácticas, patrones probados y una estructura de proyecto sensata que capacite a los desarrolladores para crear aplicaciones React mantenibles y escalables. Integra una cuidadosa selección de herramientas, bibliotecas y configuraciones que fomentan la eficiencia, la calidad del código y la colaboración. Al utilizar este arquetipo, puedes comenzar tus proyectos de React con confianza, sabiendo que estás siguiendo estándares de la industria y beneficiándote de configuraciones probadas en batalla.
+
+## Comenzar
+Para empezar, utiliza este repositorio como una plantilla (Use this template -> Create a new repository). Una vez tengas tu repositorio local, instala las dependencias y arranca el proyecto:
+```
+npm install
+npm run dev
+```
