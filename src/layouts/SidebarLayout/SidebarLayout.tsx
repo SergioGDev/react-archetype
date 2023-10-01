@@ -8,7 +8,7 @@ export type SidebarLayoutProps = PropsWithChildren;
 
 export const SidebarLayout: React.FC<SidebarLayoutProps> = ({ children }) => {
   const { sidebarOpened } = useContext(SidebarContext);
-  console.log(sidebarOpened);
+  
   return (
     <div className={styles.container}>
       <div
