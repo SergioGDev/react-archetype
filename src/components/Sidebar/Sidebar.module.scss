@@ -1,7 +1,7 @@
 @import "@/themes/_variables.scss";
 
 .container {
-  width: 84px;
+  width: $sidebar-closed-width;
   background-color: $white;
   color: $black;
   height: 100vh;
@@ -10,7 +10,7 @@
   left: 0;
   z-index: 100;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  transition: width $sidebar-transition-time ease-in-out;
+  transition: width $sidebar-transition-time ease-in-out, left $sidebar-transition-time ease-in-out;
 
   display: flex;
   align-items: center;
@@ -22,7 +22,9 @@
   }
 
   &.active {
-    width: 220px;
+    width: $sidebar-opened-width;
+    left: 0;
+    transition: width $sidebar-transition-time ease-in-out, left $sidebar-transition-time ease-in-out;
     
     .sidebarSubcontainer {
       .logo {
@@ -148,6 +150,17 @@
         color: $white;
         border-color: $bg-selected-link;
       }
+    }
+  }
+}
+
+/* xs */
+@media screen and (max-width: 599px) {
+  .container {
+    left: -$sidebar-closed-width;
+
+    .colapsarButton {
+      display: none;
     }
   }
 }

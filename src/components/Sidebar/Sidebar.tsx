@@ -59,7 +59,7 @@ export const Sidebar: React.FC = () => {
           }
         )}
       </div>
-      <div className={styles.sidebarSubcontainer}>
+      <div className={`${styles.sidebarSubcontainer} ${styles.colapsarButton}`}>
         <div className={styles.linkListContainer}>
           <button
             onClick={() => {

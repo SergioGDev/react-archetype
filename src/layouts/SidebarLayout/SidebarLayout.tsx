@@ -3,6 +3,7 @@ import styles from "./SidebarLayout.module.scss";
 
 import { Sidebar } from "@/components/Sidebar";
 import { SidebarContext } from "@/context/SidebarContext";
+import { Toolbar } from "@/components/Toolbar";
 
 export type SidebarLayoutProps = PropsWithChildren;
 
@@ -18,12 +19,20 @@ export const SidebarLayout: React.FC<SidebarLayoutProps> = ({ children }) => {
       >
         <Sidebar />
       </div>
-      <div
-        className={`${styles.content} ${
-          sidebarOpened ? styles.sidebarOpened : ""
-        }`}
-      >
-        {children}
+      <div className={styles.mainContent}>
+        {/* Toolbar */}
+        <div  className={styles.toolbarContent}>
+          <Toolbar />
+        </div>
+
+        {/* Page container */}
+        <div
+          className={`${styles.pageContainer} ${
+            sidebarOpened ? styles.sidebarOpened : ""
+          }`}
+        >
+          {children}
+        </div>
       </div>
     </div>
   );
