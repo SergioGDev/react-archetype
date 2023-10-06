@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './{{ pascalCase name }}.module.scss';
 
-export type {{ pascalCase name }}Props = {};
+import { {{ pascalCase name }}Props } from './{{ camelCase name }}.types';
 
-export const {{ pascalCase name }}: React.FC<{{ pascalCase name }}Props> = (props) => {
+export const {{ pascalCase name }} = ({ exampleProp }: {{ pascalCase name }}Props) => {
   return (
     <div className={styles.container}>{{ pascalCase name }} Component</div>
   );
